@@ -1,74 +1,91 @@
-import React, {Fragment} from "react";
+import React/*{Fragment, useEffect, useState}*/ from "react";
 
-const Menu = () => {
+/*const mybutton = async id => {
+    const 
+    id.preventDefault();
+    try {
+        console.log("power"))
+        };
+    } catch (err) {
+        console.error(err.message);
+    }
+*/
+const powerbutton = (e) => {
+    console.log('Segaaaaa!');
+}
+const startbutton = (e) => {
+    console.log('Ready...Set...Go!');
+}
+const soundbutton = (e) => {
+    console.log('cue Sonic music');
+}
+const helpbutton = (e) => {
+    console.log('Help me!');
+}
+const modesbutton = (e) => {
+    console.log('Select a different mode');
+}
 
-    /*{" "}*/
-    <Fragment>
-        
-        <table className="table mt-5 text-center">
-    <thead>
-        <tr>
-            <th>End Game</th>
-            <td>
-                <button
-                className="btn btn-warning"
-                //onClick={() => }
-                >End Game
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <th>Start</th>
-            <td>
-                <button
-                className="btn btn-warning"
-                //onClick={() => }
-                >
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <th>Sound</th>
-            <td>
-                <button
-                className="btn btn-warning"
-                //onClick={() => }
-                >
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <th>Help</th>
-            <td>
-                <button
-                className="btn btn-warning"
-                //onClick={() => }
-                >
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <th>Modes</th>
-            <td>
-                <button
-                className="btn btn-warning"
-                //onClick={() => }
-                >
-                </button>
-            </td>
-        </tr>
-    </thead>
-    <tbody>
-        {/*<tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-        */}
-    </tbody>
-  </table>
-    </Fragment>
-};
+function Menu() {
+  return (
+                <body>
+                  <table>
+                      <tbody>
+                          <tr>
+                              <td>
+                                  <button
+                                      className="btn btn-warning btn-lg"
+                                      onClick={powerbutton}
+                                  >
+                                  </button>
+                              </td>
+                              <th>ON/OFF</th>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <button
+                                      className="btn btn-warning btn-lg"
+                                      onClick={startbutton}
+                                  >
+                                  </button>
+                              </td>
+                              <th>START</th>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <button
+                                      className="btn btn-warning btn-lg"
+                                      onClick={soundbutton}
+                                  >
+                                  </button>
+                              </td>
+                              <th>SOUND</th>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <button
+                                      className="btn btn-warning btn-lg"
+                                      onClick={helpbutton}
+                                  >
+                                  </button>
+                              </td>
+                              <th>HELP</th>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <button
+                                      className="btn btn-warning btn-lg"
+                                      onClick={modesbutton}
+                                  >
+                                  </button>
+                              </td>
+                              <th>Modes</th>
+                          </tr>
+                      </tbody>
+                  </table>
+              </body>
+  );
+}
 
-export default Menu
 
+export default Menu;

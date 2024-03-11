@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React from "react";
 import './App.css';
 
 // Import Components //
@@ -8,17 +8,13 @@ import Menu from './components/Menu/Menu';
 
 //Components//
 
-function App() {
-  return <Fragment>
-    <div>
-      <Game/>
+const App = () => 
+    <div className="App">
+      <Game size={6}/>
       <Menu/>
-    </div>
-    <div>
       <Title/>
     </div>
+
     
-  </Fragment>
-}
 
 export default App;
