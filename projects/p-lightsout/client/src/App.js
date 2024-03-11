@@ -8,12 +8,17 @@ import Menu from './components/Menu/Menu';
 
 //Components//
 
-const App = () => 
+const App = () => {
+  return (
     <div className="App">
-      <Game size={6}/>
-      <Menu/>
-      <Title/>
-    </div>
+    <Game size={5}/>
+    <Menu/>
+    <Title/>
+  </div>
+  );
+
+}
+
 
     
 

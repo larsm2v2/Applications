@@ -1,6 +1,6 @@
-import {useState} from 'react';
-import '.Game.css';
-import Cell from '../../Cell/Cell.js'
+import React, {useState} from 'react';
+import './Game.css';
+import Cell from "../Cell/Cell"
 
 const Game = ({size}) => {
      
@@ -10,7 +10,7 @@ const Game = ({size}) => {
             .map (r =>
                 new Array(size)
                 .fill()
-                .map (c => Math.random() < .5))
+                .map (c => Math.random() < .4))
     
     const [game,setBoard] = useState([createGrid()])
     
