@@ -1,7 +1,7 @@
 .Game {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 2px;
     box-shadow: 
         0 0 calc(.1*var(--size)) #000,

@@ -6,9 +6,9 @@
     margin: var(--size);
 }
 .on {
-    background: #df5ba8;;
+    background: #5fdf5b;
 }
 
 .off {
-    background-color:#4c374e;
+    background-color:#13a500;
 }

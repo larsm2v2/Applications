@@ -12,6 +12,8 @@ const App = () => {
   return (
     <div className="App">
     <Game size={5}/>
+    <Title/>
+    <Menu/>
   </div>
   );
 
